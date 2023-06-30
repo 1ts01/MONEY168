@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+  <title>ลิงค์แชร์กิจกรรม</title>
+</head>
+<body>
+    <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
+    <script>
+        async function main() {
+                                         // Liff ID
+            await liff.init({ liffId: "2000014330-e2oY5rKL" })
+            await liff.shareTargetPicker([
+                {
+                    type: "flex",
+                    // ข้อความก่อนกดอ่าน
+                    altText: "มีเครดิตฟรีมาแจก",
+                    contents: 
+                    // โค้ดจาก line bot designer
+                    {
+  "type": "bubble",
+  "hero": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://cdn.discordapp.com/attachments/1099696257108279347/1099696414977695855/add1.png",
+            "size": "full"
+          }
+        ],
+        "cornerRadius": "xxl",
+        "paddingAll": "none",
+        "borderWidth": "semi-bold",
+        "borderColor": "#ffffff"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "MONEY 168",
+            "weight": "bold",
+            "color": "#ffffff",
+            "align": "center",
+            "margin": "md",
+            "size": "xl"
+          },
+          {
+            "type": "text",
+            "text": "แจกเครดิตฟรี 50.-",
+            "color": "#fffc00",
+            "align": "center"
+          },
+          {
+            "type": "text",
+            "text": "แจกทุกยูส รับได้ไม่จำกัด แจกทุกวัน",
+            "color": "#fffc00",
+            "align": "center"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "uri",
+                  "label": "รับเครดิตฟรี 50.-",
+                  "uri": "https://lin.ee/FZxE8Q7"
+                },
+                "color": "#000000"
+              }
+            ],
+            "backgroundColor": "#33FF00",
+            "cornerRadius": "xl",
+            "margin": "md",
+            "borderWidth": "medium",
+            "borderColor": "#ffffff",
+            "background": {
+              "type": "linearGradient",
+              "angle": "0deg",
+              "startColor": "#fdb300",
+              "endColor": "#f8ef05"
+            }
+          }
+        ],
+        "margin": "md"
+      }
+    ],
+    "paddingAll": "lg",
+    "backgroundColor": "#ffffff",
+    "background": {
+      "type": "linearGradient",
+      "angle": "0deg",
+      "startColor": "#007100",
+      "endColor": "#042304"
+    }
+  }
+}
+                }
+            ])
+            liff.closeWindow()
+        }
+        main()
+    </script>
+</body>
+</html>
